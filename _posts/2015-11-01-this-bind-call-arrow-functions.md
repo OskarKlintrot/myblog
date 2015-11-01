@@ -175,6 +175,22 @@ var greeter = new Greeter("world");
 var unbound = greeter.greet;
 console.log(unbound());
 {%endhighlight%}
+or by using block scope:
+{% highlight Javascript %}
+var Greeter = (function () {
+    var greeting = "";
+    function Greeter(message) {
+        greeting = message;
+    }
+    Greeter.prototype.greet = function () {
+        return "Hello, " + greeting;
+    };
+    return Greeter;
+})();
+var greeter = new Greeter("world");
+var unbound = greeter.greet;
+console.log(unbound());
+{%endhighlight%}
 Again, `Hello, world` is the output. This might be the easiest way if you are ok with the drawbacks. But even Crockford avoids `this`. But I don't like him so I use `this` and Typescript! :)
 
 #### Dangers with `this`
