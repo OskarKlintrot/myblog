@@ -7,7 +7,6 @@ redcarpet:
 
 # Permalinks
 permalink:        "pretty"
-relative_permalinks: true
 
 # Redirects
 gems:
