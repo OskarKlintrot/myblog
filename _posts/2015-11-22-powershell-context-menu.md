@@ -5,7 +5,7 @@ comments: True
 blog: Tech
 tags: [Powershell, Windows]
 description: A quick and dirty guide to add an "Open Powershell here" option to the Windows 10 context menu
-redirect_from: "/powershell-context-menu"
+redirect_from: "/powershell-context-menu/"
 ---
 I noticed that the tutorials I found for adding an "Open Powershell here" option to the Explorer context menu (the one that pop ups when you right-click on an empty space) didn't work for Windows 10. Adding it is really simple though, you just open regedit (`win+R` and then type in `regedit` and press enter) and go to the following location:
   `HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell`

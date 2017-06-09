@@ -5,7 +5,7 @@ comments: True
 blog: Tech
 tags: [Javascript, Typescript]
 description: The keyword this is perhaps one of the most confusing things about Javascript, at least it is for me. If you think so to then this article is for you! Here we will talk more about what this actually is good for and how to avoid some pitfalls.
-redirect_from: "/this-bind-call-arrow-functions"
+redirect_from: "/this-bind-call-arrow-functions/"
 ---
 The keyword `this` is something I have had a lot of trouble to understand and still have. This article is a direct result of a discussion I hade with some brilliant Javascript programmers from my class and the class above at the program I study, web development at LNU in Sweden. It all started with a quite bad [blog post](www.walkercoderanger.com/blog/2014/02/typescript-isnt-the-answer/) where the author states that:
 >The real problem with TypeScript is contained in the statement that it is a “superset of JavaScript.” That means that all legal JavaScript programs are also legal typescript programs. TypeScript doesn’t fix anything in JavaScript beyond some things that were fixed in ECMA Script 5.
