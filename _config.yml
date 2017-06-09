@@ -6,8 +6,12 @@ redcarpet:
   extensions:    ["with_toc_data"]
 
 # Permalinks
-permalink:        "/:title"
+permalink:        "pretty"
 relative_permalinks: true
+
+# Redirects
+gems:
+  - jekyll-redirect-from
 
 # Setup
 title:            Oskar Klintrot

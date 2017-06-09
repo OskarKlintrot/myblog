@@ -5,6 +5,7 @@ comments: True
 blog: Tech
 tags: [Powershell, Scripting]
 description: In this article we will take a look at how we can make some scripts that is automaticly added as alias in Powershell. This way we can automate stuff that we do a lot and keep everything super simple to maintain.
+redirect_from: "/set-up-multiple-aliases-in-powershell-at-once"
 ---
 Using the command-line in Windows used to be a horrible experience compared to *nix. Nowdays though Windows PowerShell is a really nice command-line shell, especially in Windows 10. The shell's in Windows (thats PS and of course the good old cmd.exe) works in another way than in *nix. In Windows they treat everything as objects while in *nix they treat everything as a file. Both have their pro's and cons but I'm not the right person to dig into that. Instead I will show you how I use small scripts for my most used commands.  
 ## Starting to use the command-line, again...
