@@ -72,10 +72,11 @@ Else
 
 # Find One Line If Statements
 
+
 ```
 $Time = [System.Diagnostics.Stopwatch]::StartNew()
 
-$expr = "^.*(if \(.*\)) *(?!\{)$"
+$expr = "^ *(if|else|else if)((?![a-z])).*(?!\{)$"
 
 $files = Get-ChildItem -Path .. -Filter *.cs -Recurse
 
