@@ -112,3 +112,26 @@ Else
     write-host $([string]::Format("`rDone in: {0} seconds", $Time.Elapsed.TotalSeconds))
 }
 ```
+
+# Find dead code
+
+```
+$Time = [System.Diagnostics.Stopwatch]::StartNew()
+
+$expr = "^(.*(^|[^/])//[^/]).*(\;|\{|\}|\,|\||\?\?|\&)$"
+
+$files = Get-ChildItem -Path .. -Filter *.cs -Recurse
+
+write-host $("The following files contains dead code:")
+
+ForEach ($file in $files)
+{
+    Get-Content $file.FullName |
+        foreach{ $_.Trim()} |
+        Select-String -Pattern $expr -AllMatches |
+        Select-Object @{Name='Path';Expression={$file.FullName}}, LineNumber, Line
+}
+
+write-host $([string]::Format("`rDone in: {0} seconds", $Time.Elapsed.TotalSeconds))
+write-host $([string]::Format("`rJust use the regex in VS Search to find them easily: `"{0}`"", $expr))
+```
