@@ -12,7 +12,7 @@ gems:
 # Setup
 title:            Oskar Klintrot
 tagline:          'Homepage of Oskar Klintrot'
-description:      'CS Student'
+description:      'System Developer'
 url:              http://oskarklintrot.se
 baseurl:          "/"
 
