@@ -3,8 +3,8 @@ layout: post
 title: Tail logs with a simple one-line Powershell script
 comments: True
 blog: Tech
-tags: [Powershell, Windows]
-description: With a small one-liner you can listen to logs in Powershell
+tags: [Powershell]
+description: With a small one-liner you can listen to logs in Powershell.
 ---
 
 With just a small one-liner you can listen to logs in Powershell:
